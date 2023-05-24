@@ -1,0 +1,16 @@
+.group {
+  display: flex;
+  flex-direction: column;
+
+  .blocks {
+    display: flex;
+
+    > :not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+
+  * {
+    flex-shrink: 0;
+  }
+}

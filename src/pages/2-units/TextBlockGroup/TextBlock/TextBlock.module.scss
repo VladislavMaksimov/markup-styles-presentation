@@ -1,0 +1,10 @@
+@use "../../../../styles/mixins";
+
+.block {
+  @include mixins.center-flex();
+
+  .text {
+    font-size: inherit;
+    color: white;
+  }
+}
