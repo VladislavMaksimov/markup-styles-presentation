@@ -10,7 +10,7 @@ export const MacaqueSkills: FC<MacaqueSkillsProps> = ({ skills }) => (
     <h3 className={styles.heading}>Skills</h3>
     <ul className={styles.list}>
       {skills.map((skill) => (
-        <li>- {skill}</li>
+        <li key={skill}>- {skill}</li>
       ))}
     </ul>
   </section>

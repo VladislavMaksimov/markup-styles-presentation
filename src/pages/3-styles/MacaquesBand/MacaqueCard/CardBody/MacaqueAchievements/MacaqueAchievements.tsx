@@ -18,6 +18,7 @@ export const MacaqueAchievements: FC<MacaqueAchievementsProps> = ({
     <div className={styles.achievements}>
       {achievements.map((achievement) => (
         <img
+          key={achievement.pictureSrc}
           className={styles.achievement}
           alt="achievement"
           src={achievement.pictureSrc}

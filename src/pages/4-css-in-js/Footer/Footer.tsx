@@ -9,19 +9,19 @@ const StyledFooter = styled.footer({
   backgroundColor: "aliceblue",
 });
 
-const StyledContacts = styled.section<{ marginBottom: number }>(
-  ({ marginBottom }) => ({
+const StyledContacts = styled.section<{ $marginBottom: number }>(
+  ({ $marginBottom }) => ({
     display: "flex",
     flexDirection: "column",
     "> :not(:last-child)": {
-      marginBottom,
+      $marginBottom,
     },
   })
 );
 
 export const Footer = () => (
   <StyledFooter>
-    <StyledContacts marginBottom={15}>
+    <StyledContacts $marginBottom={15}>
       <p>tel: 000000</p>
       <p>mail: vodka@meat.ru</p>
     </StyledContacts>

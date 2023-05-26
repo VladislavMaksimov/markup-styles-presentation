@@ -8,8 +8,8 @@ interface MacaquesBandProps {
 
 export const MacaquesBand: FC<MacaquesBandProps> = ({ macaques }) => (
   <section className={styles.band}>
-    {macaques.map((macaque) => (
-      <MacaqueCard {...macaque} />
+    {macaques.map((macaque, index) => (
+      <MacaqueCard key={index} {...macaque} />
     ))}
   </section>
 );

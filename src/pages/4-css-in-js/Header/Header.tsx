@@ -9,8 +9,8 @@ const StyledHeader = styled.header`
   background-color: rgb(205, 255, 255);
 `;
 
-const StyledH1 = styled.h1<{ fontSize?: string }>`
-  font-size: ${(props) => (props.fontSize ? props.fontSize : "60px")};
+const StyledH1 = styled.h1<{ $fontSize?: string }>`
+  font-size: ${(props) => (props.$fontSize ? props.$fontSize : "60px")};
   line-height: 60px;
   font-weight: 400;
   text-transform: uppercase;
@@ -23,7 +23,7 @@ const StyledVodka = styled.img`
 
 export const Header = () => (
   <StyledHeader>
-    <StyledH1 fontSize="30px">Best page ever</StyledH1>
+    <StyledH1 $fontSize="30px">Best page ever</StyledH1>
     <StyledVodka alt="Best drink ever" src={vodka} />
   </StyledHeader>
 );
