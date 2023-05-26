@@ -11,4 +11,5 @@ export const menuItems: ManuItem[] = [
   { name: "Units", to: ROUTES.UNITS },
   { name: "Styles", to: ROUTES.STYLES },
   { name: "CSS-in-JS", to: ROUTES.CSS_IN_JS },
+  { name: "Bonus", to: ROUTES.BONUS },
 ];

@@ -53,7 +53,7 @@ export const Semantic: FC = () => {
         </figure>
 
         <section className={styles.cards}>
-          <h2 className={styles.cardsHeader}>Cards</h2>
+          <h2 className={styles.cardsHeading}>Cards</h2>
           <section className={styles.card}>
             <span className={styles.cardName}>Meat 1</span>
           </section>

@@ -48,23 +48,23 @@
         .description {
           max-width: 50%;
         }
-      }
 
-      > :not(:last-child) {
-        margin-bottom: 10px;
-      }
-    }
+        .metrics {
+          width: 200px;
 
-    .metrics {
-      width: 200px;
+          .metric {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
 
-      .metric {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
+            .metricName {
+              color: gray;
+            }
+          }
 
-        .metricName {
-          color: gray;
+          > :not(:last-child) {
+            margin-bottom: 10px;
+          }
         }
       }
 
@@ -97,7 +97,7 @@
       grid-template-columns: repeat(4, 1fr);
       gap: 20px;
 
-      .cardsHeader {
+      .cardsHeading {
         @include mixins.visually-hidden();
       }
 

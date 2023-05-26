@@ -1,0 +1,15 @@
+.band {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 20px;
+
+  @media (max-width: 1400px) {
+    grid-template-columns: 1fr 100%;
+    gap: 30px;
+  }
+
+  @media (max-width: 990px) {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,28 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .heading {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+
+  .achievements {
+    display: flex;
+
+    .achievement {
+      width: 30px;
+      height: 30px;
+      border-radius: 4px;
+    }
+
+    > :not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+
+  > :not(:last-child) {
+    margin-bottom: 5px;
+  }
+}

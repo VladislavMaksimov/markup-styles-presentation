@@ -4,6 +4,7 @@ import { Semantic } from "../pages/1-semantic-html/Semantic";
 import { Units } from "../pages/2-units/Units";
 import { Styles } from "../pages/3-styles/Styles";
 import { CssInJs } from "../pages/4-css-in-js/CssInJs";
+import { Bonus } from "../pages/5-bonus/Bonus";
 
 export enum ROUTES {
   NONSEMANTIC = "/non-semantic",
@@ -11,6 +12,7 @@ export enum ROUTES {
   UNITS = "/units",
   STYLES = "/styles",
   CSS_IN_JS = "/css-in-js",
+  BONUS = "/bonus",
 }
 
 interface Route {
@@ -38,5 +40,9 @@ export const routes: Route[] = [
   {
     path: ROUTES.CSS_IN_JS,
     element: <CssInJs />,
+  },
+  {
+    path: ROUTES.BONUS,
+    element: <Bonus />,
   },
 ];

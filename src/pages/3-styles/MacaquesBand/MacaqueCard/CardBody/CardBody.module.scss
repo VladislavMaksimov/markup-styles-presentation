@@ -1,0 +1,15 @@
+.content {
+  display: flex;
+  flex-direction: column;
+
+  &Row {
+    height: 112px;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  > :not(:last-child) {
+    margin-bottom: 20px;
+  }
+}

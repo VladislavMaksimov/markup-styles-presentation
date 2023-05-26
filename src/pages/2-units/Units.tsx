@@ -34,6 +34,12 @@ export const Units = () => {
         height="20vh"
         backgroundColor="blue"
       />
+      <TextBlockGroup
+        heading="%"
+        width="30%"
+        height="20%"
+        backgroundColor="violet"
+      />
     </main>
   );
 };
